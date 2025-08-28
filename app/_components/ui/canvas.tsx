@@ -1,7 +1,7 @@
 "use client"
 import React, { useRef, useEffect, useState } from "react";
 
-const useMousePosition = (canvasRef: React.RefObject<HTMLCanvasElement>) => {
+const useMousePosition = (canvasRef: React.RefObject<HTMLCanvasElement | null>) => {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
 
   useEffect(() => {
