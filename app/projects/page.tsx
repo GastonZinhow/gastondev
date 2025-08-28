@@ -8,7 +8,7 @@ const ProjectsPage = () => {
       <div className="relative flex items-center justify-center">
         <Canvas />
 
-        <h1 className="absolute text-4xl text-white font-bold bg-black rounded-full px-10 py-14 z-30">My Projects</h1>
+        <h1 className="absolute text-4xl text-white font-bold bg-black rounded-full px-8 py-8 z-30">My Projects</h1>
       </div>
       <div className="flex flex-col">
         <section className="flex flex-col lg:flex-row bg-black overflow-hidden shadow-lg mb-12 border border-white rounded-xl">

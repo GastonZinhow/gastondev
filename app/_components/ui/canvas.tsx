@@ -35,7 +35,7 @@ const Canvas: React.FC = () => {
     const resizeCanvas = () => {
       if (!canvas) return;
       canvas.width = canvas.parentElement?.clientWidth || 400;
-      canvas.height = 400;
+      canvas.height = 200;
     };
 
     resizeCanvas();
@@ -63,7 +63,7 @@ const Canvas: React.FC = () => {
           const dy = mouseY - y;
           const dist = Math.sqrt(dx * dx + dy * dy);
 
-          const maxRadius = Math.min(spacingX, spacingY) / 1.5;
+          const maxRadius = Math.min(spacingX, spacingY) / 2;
           const minRadius = 6;
           const force = Math.exp(-dist * 0.02) * maxRadius;
           const radius = Math.max(minRadius, force);
@@ -89,7 +89,7 @@ const Canvas: React.FC = () => {
   return (
     <canvas
       ref={canvasRef}
-      style={{ display: "block", width: "100%", height: "400px", background: "black" }}
+      style={{ display: "block", width: "100%", height: "200px", background: "black" }}
     />
   );
 };
