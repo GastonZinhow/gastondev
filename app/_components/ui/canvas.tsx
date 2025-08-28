@@ -69,7 +69,7 @@ const Canvas: React.FC = () => {
           const radius = Math.max(minRadius, force);
 
           ctx.beginPath();
-          ctx.arc(x, y, radius, 0, Math.PI * 2);
+          ctx.arc(x, y, radius, 0, 1);
           ctx.fillStyle = "white";
           ctx.fill();
         }
